@@ -1,0 +1,17 @@
+Matrícula|Nombre del Estudiante|Carrera|Nivel|Materias que desea ver
+201601430|Bryan César Tutivén Acosta|Ingeniería en Computación|400-I|ADMG2001,CCPG1003,SOFG1001,CCPG1010,CCPG1011,ADSG1001,CCPG1019
+201601431|Juan Ramón Jiménez Calero|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601432|Rosa María Pincay Jiménez|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601433|Ramiro Eduardo Saltos Fuentes|Ingeniería en Computación|400-I|ADMG2001,CCPG1003,SOFG1001,CCPG1011,TLMG1001,CCPG1009
+201601434|Catalina Lourdes Salazar Andrade|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601435|Sandra Edith Jiménez Ponce|Ingeniería en Computación|300-II|ADSG1001,TLMG1001,CCPG1018,CCPG1009
+201601436|Edie Ramón Mancero Molineros|Ingeniería en Computación|400-I|CCPG1018,ADMG2001,CCPG1003,SOFG1001,CCPG1010,CCPG1011
+201601437|Teresa Emilia Castro Contreras|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1009
+201601438|Juan Pablo Lima Vargas|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018
+201601439|Luis Mario Acebo Quevedo|Ingeniería en Computación|300-II|CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601440|Samanta Katiuska Pilay Narvaez|Ingeniería en Computación|400-I|ADMG2001,CCPG1003,SOFG1001,CCPG1010,CCPG1011,ADSG1001
+201601441|Mishell Celinda Baquerizo Salas|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,CCPG1018,CCPG1009
+201601442|Geanella Mishel Herrera Narváez|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1009
+201601443|Nataly Alejandra Paz Salas|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018
+201601444|Kimberly Miosotis Reyes Nieto|Ingeniería en Computación|300-II|CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601445|Alex Eduardo Bravo Lima|Ingeniería en Computación|300-II|ADSG1001,TLMG1001,CCPG1018,CCPG1009

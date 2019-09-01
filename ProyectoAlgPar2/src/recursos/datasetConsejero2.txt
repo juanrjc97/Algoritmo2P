@@ -1,0 +1,17 @@
+Matrícula|Nombre del Estudiante|Carrera|Nivel|Materias que desea ver
+201601446|Roger Ismael Avilés García|Ingeniería en Computación|300-II|CCPG1019,CCPG1018,CCPG1009,ADSG1001
+201601447|Stefanny Briggite Aguirre Larrosa|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1009
+201601448|Xavier De Jesús Anchundia Rosado|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018
+201601449|Mario Daniel Acosta Barcos|Ingeniería en Computación|400-I|ADMG2001,CCPG1003,SOFG1001,CCPG1011,CCPG1018,CCPG1009
+201601450|Nathaly Julieth Martínez Loor|Ingeniería en Computación|300-II|TLMG1001,CCPG1018,CCPG1009
+201601451|Edison Stalin Salcedo Solórzano|Ingeniería en Computación|300-II|ADSG1001,CCPG1018,CCPG1009
+201601452|Carla María Velásquez Valencia|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1009
+201601453|Maria Emilia Cascante Tumbaco|Ingeniería en Computación|300-II|CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601454|Omar César Palacios Ríos|Ingeniería en Computación|300-II|ADSG1001,CCPG1018,CCPG1009
+201601455|Nube Camila Tumbaco Romero|Ingeniería en Computación|400-I|ADSG1001,TLMG1001,ADMG2001,CCPG1003,SOFG1001,CCPG1010,CCPG1011
+201601456|Diana Maribel Vélez Alcívar|Ingeniería en Computación|300-II|CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601457|Anibal Johan Caicedo Nieves|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018
+201601458|Nancy Verónica Nieto Chinchay|Ingeniería en Computación|300-II|CCPG1019,CCPG1018,CCPG1009
+201601459|Sara Marcia Mancero Vera|Ingeniería en Computación|300-II|ADSG1001,CCPG1019,TLMG1001,CCPG1018,CCPG1009
+201601460|Johana Eduarda Flores Loor|Ingeniería en Computación|400-I|ADMG2001,CCPG1003,SOFG1001,CCPG1010,CCPG1011,TLMG1001
+201601461|Dolores Celia Chalen Bernabé|Ingeniería en Computación|300-II|CCPG1019,TLMG1001,CCPG1009
