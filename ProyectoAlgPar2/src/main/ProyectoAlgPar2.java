@@ -5,7 +5,7 @@
  */
 package main;
 
-import static controlador.MateriasController.CargarEntradas;
+import static controlador.MateriasController.*;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -24,33 +24,9 @@ public class ProyectoAlgPar2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        System.out.println("100 en proyecto sino me quedo :(");
-        
-        Map<String, Estudiante> mapaC1 = CargarEntradas("src/recursos/datasetConsejero1.txt");
-        Map<String, Estudiante> mapaC2 = CargarEntradas("src/recursos/datasetConsejero2.txt");
-
-        Map<String, List<Estudiante>> map = new HashMap<>();
-        
-        for (Map.Entry<String, Estudiante> entry : mapaC1.entrySet()) {
-            List<Estudiante> est = new LinkedList<>();
-            for(Materia e : entry.getValue().getMateriasATomar()){
-                if (!est.contains(entry.getValue())){
-                    est.add(entry.getValue());
-                }         
-                map.put(e.getIdMateria(), est);
-            }
+        Map<String, List<Estudiante>> mapaMateriasEstudiante = CargarMapa();
+        for (Map.Entry<String, List<Estudiante>> entry : mapaMateriasEstudiante.entrySet()) {
+            System.out.println("Número de estudiantes: "+entry.getValue().size()+", Código materia: "+entry.getKey()+", Estudiantes: "+entry.getValue().toString());
         }
-         
-        for (Map.Entry<String, Estudiante> entry : mapaC2.entrySet()) {
-            List<Estudiante> est = new LinkedList<>();
-            for(Materia e : entry.getValue().getMateriasATomar()){
-                est.add(entry.getValue());
-                map.put(e.getIdMateria(), est);
-            }
-        }
-        
-        for (Map.Entry<String, List<Estudiante>> entry : map.entrySet()) {
-            System.out.println(entry.getKey()+" "+entry.getValue().toString());
-        }
-    }   
+    }
 }

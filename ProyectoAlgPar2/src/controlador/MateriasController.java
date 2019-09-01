@@ -21,6 +21,8 @@ import modelo.Materia;
  * @author Rosy
  */
 public class MateriasController {
+    public static Map<String, List<Estudiante>> map = new HashMap<>();
+    
     public static Map<String, String> MateriasNivel300II(){
         Map<String, String> materias300II = new HashMap<>();
         materias300II.put("ADSG1001", "INTRODUCCIÓN A LA GESTIÓN AMBIENTAL");
@@ -65,4 +67,32 @@ public class MateriasController {
         }
         return mapaMaterias;
     }
+    
+    private static void LlenarCodigosMaterias() {
+        for(Map.Entry<String, String> entry : MateriasNivel400I().entrySet()) {
+            List<Estudiante> est = new LinkedList<>();
+            map.put(entry.getKey(), est); 
+        }
+        for(Map.Entry<String, String> entry : MateriasNivel300II().entrySet()) {
+            List<Estudiante> est = new LinkedList<>();
+            map.put(entry.getKey(), est); 
+        }
+    }
+    
+    public static Map<String, List<Estudiante>> CargarMapa() throws IOException {
+        Map<String, Estudiante> mapaC1 = CargarEntradas("src/recursos/datasetConsejero1.txt");
+        Map<String, Estudiante> mapaC2 = CargarEntradas("src/recursos/datasetConsejero2.txt");
+        LlenarCodigosMaterias();
+        for (Map.Entry<String, Estudiante> entry : mapaC1.entrySet()) {
+            for (Materia m : entry.getValue().getMateriasATomar()){
+                map.get(m.getIdMateria()).add(entry.getValue());
+            }         
+        }
+        for (Map.Entry<String, Estudiante> entry : mapaC2.entrySet()) {
+            for (Materia m : entry.getValue().getMateriasATomar()){
+                map.get(m.getIdMateria()).add(entry.getValue());
+            }         
+        }
+        return map;
+    }    
 }
