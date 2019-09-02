@@ -101,7 +101,7 @@ public class MateriasController {
     }
     
     
-    private static void LlenarCodigosMaterias() {
+    public static void LlenarCodigosMaterias() {
         for(Map.Entry<String, String> entry : MateriasNivel400I().entrySet()) {
             List<Estudiante> est = new LinkedList<>();
             map.put(entry.getKey(), est); 
@@ -115,6 +115,8 @@ public class MateriasController {
     public static Map<String, List<Estudiante>> CargarMapa() throws IOException {
         Map<String, Estudiante> mapaC1 = CargarEntradas("src/recursos/datasetConsejero1.txt");
         Map<String, Estudiante> mapaC2 = CargarEntradas("src/recursos/datasetConsejero2.txt");
+        System.out.println("Cantidad de entradas en el mapa del Consejero 1: "+mapaC1.size());
+        System.out.println("Cantidad de entradas en el mapa del Consejero 2: "+mapaC2.size());
         LlenarCodigosMaterias();
         for (Map.Entry<String, Estudiante> entry : mapaC1.entrySet()) {
             for (Materia m : entry.getValue().getMateriasATomar()){

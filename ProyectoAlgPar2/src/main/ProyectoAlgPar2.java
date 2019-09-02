@@ -30,7 +30,7 @@ public class ProyectoAlgPar2 {
         
         long fin = System.nanoTime();
         double dif = (double)(fin-inicio)*1.0e-9;
-        System.out.println("El programa demora: "+dif + "Segundos");
+        System.out.println("El programa demora: "+dif + " segundos");
         
         
     }
