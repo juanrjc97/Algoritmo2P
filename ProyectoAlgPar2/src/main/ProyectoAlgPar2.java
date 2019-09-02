@@ -24,11 +24,17 @@ public class ProyectoAlgPar2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        long inicio = System.nanoTime();
         Map<String, List<Estudiante>> mapaMateriasEstudiante = CargarMapa();
         for (Map.Entry<String, List<Estudiante>> entry : mapaMateriasEstudiante.entrySet()) {
             System.out.println("Número de estudiantes: "+entry.getValue().size()+", Código materia: "+entry.getKey()+", Estudiantes: "+entry.getValue().toString());
         }
-        
         EscribirArchivo(mapaMateriasEstudiante);
+        
+        long fin = System.nanoTime();
+        double dif = (double)(fin-inicio)*1.0e-9;
+        System.out.println("El programa demora: "+dif + "Segundos");
+        
+        
     }
 }
