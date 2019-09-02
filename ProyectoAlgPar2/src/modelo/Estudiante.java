@@ -73,7 +73,6 @@ public class Estudiante {
     @Override
     public String toString() {
         return matricula +" -> "+  nombresCompletos + " (" + nivel+")";
-        
     }
 
     @Override
