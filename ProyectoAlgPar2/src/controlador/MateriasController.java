@@ -6,9 +6,13 @@
 package controlador;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -22,6 +26,8 @@ import modelo.Materia;
  */
 public class MateriasController {
     public static Map<String, List<Estudiante>> map = new HashMap<>();
+    
+    private static String filename = "src/recursos/Cupos.txt";
     
     public static Map<String, String> MateriasNivel300II(){
         Map<String, String> materias300II = new HashMap<>();
@@ -67,6 +73,33 @@ public class MateriasController {
         }
         return mapaMaterias;
     }
+    
+   
+    
+     public static void EscribirArchivo(Map<String, List<Estudiante>> est) throws IOException{
+        Path path = Paths.get(filename);
+        
+        try (
+            BufferedWriter writer = new BufferedWriter(
+                                        new FileWriter(path.toFile(),true))){
+            
+            for (Map.Entry<String, List<Estudiante>> entry : est.entrySet()) {
+            writer.write("Número de estudiantes: "+entry.getValue().size()+", Código materia: "+entry.getKey()+", Estudiantes: "+entry.getValue().toString() + "\n");
+        }
+            //writer.write(toCSV(est));
+            writer.newLine();
+        } catch (IOException e) {
+            throw e;
+        }
+    }
+    
+    public static String toCSV(Map<String, List<Estudiante>> e){
+        for (Map.Entry<String, List<Estudiante>> entry : e.entrySet()) {
+            return "Número de estudiantes: "+entry.getValue().size()+", Código materia: "+entry.getKey()+", Estudiantes: "+entry.getValue().toString() + "\n";
+        }
+       return "";
+    }
+    
     
     private static void LlenarCodigosMaterias() {
         for(Map.Entry<String, String> entry : MateriasNivel400I().entrySet()) {

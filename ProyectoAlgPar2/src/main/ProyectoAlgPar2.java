@@ -25,5 +25,7 @@ public class ProyectoAlgPar2 {
         for (Map.Entry<String, List<Estudiante>> entry : mapaMateriasEstudiante.entrySet()) {
             System.out.println("Número de estudiantes: "+entry.getValue().size()+", Código materia: "+entry.getKey()+", Estudiantes: "+entry.getValue().toString());
         }
+        
+        EscribirArchivo(mapaMateriasEstudiante);
     }
 }
